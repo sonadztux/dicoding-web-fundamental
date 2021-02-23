@@ -17,14 +17,23 @@
             margin: 0 auto;
         }
 
-        .box {
-            flex-grow: 1;
-
-            /* other properties */
+        .box {            /* other properties */
             background-color: blanchedalmond;
             margin: 5px;
             border: 2px solid black;
             border-radius: 10px;
+        }
+
+        .first {
+            flex-grow: 1;
+        }
+
+        .second {
+            flex-grow: 2;
+        }
+
+        .third {
+            flex-grow: 1;
         }
     </style>
 
@@ -32,9 +41,9 @@
 <body>
     
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
     </div>
 
 </body>
