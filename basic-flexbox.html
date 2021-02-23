@@ -4,46 +4,58 @@
     <title>Flex Container</title>
 
     <style>
-        .container {
+        .flex-column {
             display: flex;
+            flex-direction: column;
 
             /* other properties */
             width: 800px;
-            height: 250px;
-            background-color: #11C5C6;
-            border: 2px solid black;
+            height: 300px;
             padding: 20px;
-            border-radius: 10px;
             margin: 0 auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #11C5C6;
         }
 
-        .box {            /* other properties */
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            /* other properties */
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #FBDD1C;
+        }
+
+        .box {         
+            flex-grow: 1;
+            
+            /* other properties */
             background-color: blanchedalmond;
             margin: 5px;
             border: 2px solid black;
             border-radius: 10px;
-        }
-
-        .first {
-            flex-grow: 1;
-        }
-
-        .second {
-            flex-grow: 2;
-        }
-
-        .third {
-            flex-grow: 1;
         }
     </style>
 
 </head>
 <body>
     
-    <div class="container">
-        <div class="box first"></div>
-        <div class="box second"></div>
-        <div class="box third"></div>
+    <div class="flex-column">
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
     </div>
 
 </body>
