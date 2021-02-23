@@ -80,8 +80,34 @@ body {
     margin-top: 20px;
 }
 
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    background-color: orange;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffb700;
+}
+
 @media screen and (max-width: 513px) {
     .button {
         padding: 10px;
+    }
+
+    .history {
+        width: 100%;
     }
 }
